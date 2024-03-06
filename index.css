@@ -47,9 +47,6 @@
     padding: .7rem;
     text-align: center;
 }
-input:placeholder-shown {
-    color: blue;
-}
 
 .button-container {
     display: flex;
