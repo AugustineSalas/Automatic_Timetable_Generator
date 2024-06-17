@@ -9,13 +9,13 @@ from datetime import timedelta, date
 
 
 time_slots = (
-    ('9:30 - 10:30', '9:30 - 10:30'),
-    ('10:30 - 11:30', '10:30 - 11:30'),
-    ('11:30 - 12:30', '11:30 - 12:30'),
-    ('12:30 - 1:30', '12:30 - 1:30'),
-    ('2:30 - 3:30', '2:30 - 3:30'),
-    ('3:30 - 4:30', '3:30 - 4:30'),
-    ('4:30 - 5:30', '4:30 - 5:30'),
+    ('8:45 - 9:45', '8:45 - 9:45'),
+    ('9:45 - 10:45', '9:45 - 10:45'),
+    ('11:00 - 12:00', '11:00 - 12:00'),
+    ('12:00 - 1:00', '12:00 - 1:00'),
+    ('2030 - 3:00', '2:00 - 3:00'),
+    ('3:00 - 4:00', '3:00 - 4:00'),
+    ('4:00 - 5:00', '4:00 - 5:00'),
 )
 DAYS_OF_WEEK = (
     ('Monday', 'Monday'),
@@ -50,7 +50,7 @@ class Instructor(models.Model):
 
 class MeetingTime(models.Model):
     pid = models.CharField(max_length=4, primary_key=True)
-    time = models.CharField(max_length=50, choices=time_slots, default='11:30 - 12:30')
+    time = models.CharField(max_length=50, choices=time_slots, default='8:45 - 9:45')
     day = models.CharField(max_length=15, choices=DAYS_OF_WEEK)
 
     def __str__(self):
