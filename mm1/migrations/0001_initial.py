@@ -40,7 +40,7 @@ class Migration(migrations.Migration):
             name='MeetingTime',
             fields=[
                 ('pid', models.CharField(max_length=4, primary_key=True, serialize=False)),
-                ('time', models.CharField(choices=[('9:30 - 10:30', '9:30 - 10:30'), ('10:30 - 11:30', '10:30 - 11:30'), ('11:30 - 12:30', '11:30 - 12:30'), ('12:30 - 1:30', '12:30 - 1:30'), ('2:30 - 3:30', '2:30 - 3:30'), ('3:30 - 4:30', '3:30 - 4:30'), ('4:30 - 5:30', '4:30 - 5:30')], default='11:30 - 12:30', max_length=50)),
+                ('time', models.CharField(choices=[('8:45 - 9:45', '8:45 - 9:45'), ('9:45 - 10:45', '9:45 - 10:45'), ('11:00 - 12:00', '11:00 - 12:00'), ('12:00 - 1:00', '12:00 - 1:00'), ('2:00 - 3:00', '2:00 - 3:00'), ('3:00 - 4:00', '3:00 - 4:00'), ('4:00 - 5:00', '4:00 - 5:00')], default='8:45 - 9:45', max_length=50)),
                 ('day', models.CharField(choices=[('Monday', 'Monday'), ('Tuesday', 'Tuesday'), ('Wednesday', 'Wednesday'), ('Thursday', 'Thursday'), ('Friday', 'Friday'), ('Saturday', 'Saturday')], max_length=15)),
             ],
         ),
