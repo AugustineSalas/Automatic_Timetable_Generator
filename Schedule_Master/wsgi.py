@@ -1,5 +1,5 @@
 """
-WSGI config for Schedule-Master project.
+WSGI config for Schedule_Master project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Schedule-Master.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Schedule_Master.settings')
 
 application = get_wsgi_application()
